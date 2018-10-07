@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-header">添加管理员</div>
+                    <div class="layui-card-body">
+                        <form class="layui-form" action="">
+                            <input type="hidden" name="mg_id" value="{$info.mg_id}">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">登录名</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="mg_name" required lay-verify="required" placeholder="请输入标题" autocomplete="off" value="{$info.mg_name}" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">真实姓名</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="mg_tname" value="{$info.mg_tname}" required lay-verify="required" placeholder="请输入真实姓名" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">密码框</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="mg_pwd" required lay-verify="required" placeholder="请输入密码" autocomplete="off" value="{$info.mg_pwd}" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">角色</label>
+                                <div class="layui-input-inline">
+                                    <select name="mg_role_id" lay-verify="required">
+                                        <option value=""></option>
+
+                                        <volist name="roleinfo" id="vo">
+                                            <option <eq name="vo.role_id" value="$info['mg_role_id']">selected</eq> value="{$vo.role_id}">{$vo.role_name}</option>
+                                        </volist>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">分配项目</label>
+                                <div class="layui-input-block">
+                                    <volist name="xminfo" id="xm">
+                                        <input type="checkbox" <if condition="in_array($xm['xm_id'], $have_xm)">checked</if> name="mg_xm[]" value="{$xm.xm_id}" title="{$xm.xm_name}">
+                                    </volist>
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="zedit">修改</button>
+                                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+
+    layui.use('form', function() {
+        var form = layui.form;
+
+        form.on('submit(zedit)', function(data){
+            var data = data.field;
+            var url = "__CONTROLLER__/zedit";
+            $.post(url, data, function(result){
+                if(result.status == 0){
+                    layer.msg(result.message);
+                }
+
+                if(result.status == 1){
+                    layer.msg(result.message,{icon:1,time: 800},function(){
+                        parent.location.href= "__CONTROLLER__/zlist";
+                    });
+
+                }
+            }, 'JSON');
+            return false;
+        })
+
+
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

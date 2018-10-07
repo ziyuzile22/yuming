@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>域名列表</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="zq-header">
+                        <div class="layui-form-item layui-form layui-form-pane">
+                            <form method="post" action="__SELF__">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">域名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" class="layui-input" name="ym_site" value="{$ym_site}">
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">项目</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_xm">
+                                            <option value="">--请选择--</option>
+                                            <foreach name="xminfo" item="xm">
+                                                <option <eq name="xm.xm_id" value="$ym_xm">selected</eq>
+                                                    value="{$xm.xm_id}">{$xm.xm_name}</option>
+                                            </foreach>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">竞价/优化</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_type">
+                                            <option value="">--请选择--</option>
+                                            <option <eq name="ym_type" value="1">selected</eq> value="1">竞价</option>
+                                            <option <eq name="ym_type" value="2">selected</eq> value="2">优化</option>
+                                            <option <eq name="ym_type" value="3">selected</eq> value="3">图片库</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">PC/SJ</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_pc">
+                                            <option value="">--请选择--</option>
+                                            <option <eq name="ym_pc" value="1">selected</eq> value="1">PC</option>
+                                            <option <eq name="ym_pc" value="2">selected</eq> value="2">SJ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">只显示主站</label>
+                                    <div class="layui-input-block">
+                                        <input type="checkbox" name="ym_showzhu" <eq name="ym_showzhu" value="on">checked</eq> lay-skin="switch" lay-text="开启|关闭">
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn layuiadmin-btn-admin" id="zlist-search">
+                                            <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="layui-card-body">
+                        <xblock>
+                            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+                            <button class="layui-btn" onclick="window.open('__CONTROLLER__/zadd', 'right')"><i class="layui-icon"></i>添加</button>
+                            <span style="line-height:40px;float: right;">共有数据：{$count} 条</span>
+                        </xblock>
+                        <table class="layui-table" lay-even>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+                                    </th>
+                                    <th>ID</th>
+                                    <th>域名地址</th>
+                                    <th>PC/SJ</th>
+                                    <th>竞价/优化</th>
+                                    <th>后台地址</th>
+                                    <th>服务器</th>
+                                    <th>项目</th>
+                                    <th>账户</th>
+                                    <th>ftp账号</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody" class="zqbody">
+                                <volist name="info" id="data">
+                                    <tr>
+                                        <td>
+                                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='{$data.ym_id}'><i class="layui-icon">&#xe605;</i></div>
+                                        </td>
+                                        <td>{$i}</td>
+                                        <td><a href="http://{$data.ym_site}" target="_blank">{$data.ym_level|repeatFg=###} {$data.ym_site}</a></td>
+                                        <td>
+                                            <eq name="data['ym_pc']" value="1">PC</eq>
+                                            <eq name="data['ym_pc']" value="2">SJ</eq>
+                                        </td>
+                                        <td>
+                                            <eq name="data['ym_type']" value="1">竞价</eq>
+                                            <eq name="data['ym_type']" value="2">优化</eq>
+                                            <eq name="data['ym_type']" value="3">图片库</eq>
+                                        </td>
+                                        <td><a href="http://{$data.ym_site}/{$data.ym_hou}" target="_blank">{$data.ym_hou}</a></td>
+                                        <td>
+                                            <foreach name="fwqinfo" item="fwq">
+                                                <eq name="fwq.fwq_id" value="$data.ym_fwq">{$fwq.fwq_name}</eq>
+                                            </foreach>
+                                        </td>
+                                        <td>
+                                            <foreach name="xminfo" item="xm">
+                                                <eq name="xm.xm_id" value="$data.ym_xm">{$xm.xm_name}</eq>
+                                            </foreach>
+                                        </td>
+                                        <td>
+                                            <foreach name="zhinfo" item="zh">
+                                                <eq name="zh.zh_id" value="$data.ym_zhanghu">{$zh.zh_name}</eq>
+                                            </foreach>
+                                        </td>
+                                        <td>{$data.ym_ftp}</td>
+                                        <td>
+                                            
+                                            <eq name="data.ym_pid" value="0">
+                                                <a class="layui-btn layui-btn-xs layui-btn-normal" href="__CONTROLLER__/zaddnew/ym_id/{$data.ym_id}">添加子集</a>
+                                            </eq>
+                                            
+                                            <a class="layui-btn layui-btn-xs" href="__CONTROLLER__/zedit/ym_id/{$data.ym_id}">编辑</a>
+                                            <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="member_del(this,'{$data.ym_id}')" href="javascript:;">删除</a>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                        <p id="findnoresult">没有找到相关项！</p>
+                        <div class="page">{$page}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+    layui.use('form', function() {
+        var form = layui.form;
+    });
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('确认要删除吗？', function(index) {
+            //发异步删除数据
+            var url = "__CONTROLLER__/zdel";
+            $.post(url, { id: id }, function(result) {
+                if (result.status == 0) {
+                    dialog.error(result.message);
+                }
+                if (result.status == 1) {
+                    $(obj).parents("tr").remove();
+                    layer.msg('已删除!', { icon: 1, time: 1000 });
+                }
+            }, 'JSON');
+        });
+    }
+    /*用户-批量删除*/
+    function delAll(argument) {
+        var data = tableCheck.getData();
+        if (data.length == 0) {
+            layer.msg('你还为选择任何一项！');
+            return false;
+        }
+        var str = data.join(",");
+        layer.confirm('确认要删除吗？' + data, function(index) {
+            //发异步删除数据
+            var url = "__CONTROLLER__/zdel";
+            $.post(url, { id: str }, function(result) {
+                if (result.status == 0) {
+                    dialog.error(result.message);
+                }
+                if (result.status == 1) {
+                    //捉到所有被选中的，发异步进行删除
+                    layer.msg('删除成功', { icon: 1 });
+                    $(".layui-form-checked").not('.header').parents('tr').remove();
+                }
+            }, 'JSON');
+        });
+    }
+    </script>
+</body>
+
+</html>

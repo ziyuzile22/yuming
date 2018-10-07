@@ -1,0 +1,38 @@
+<div class="layui-header">
+    <ul class="layui-nav layui-left" lay-filter="">
+        <li class="layui-nav-item"><a href="/admin.php" target="_parent">回到首页</a></li>
+        <li class="layui-nav-item"><a href="javascript:;" onclick="reload();return false;">刷新页面</a></li>
+        <!-- hide s 0622 /
+        <li class="layui-nav-item"><a href="javascript:;">最新加入</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">解决方案</a>
+            <dl class="layui-nav-child">
+                <dd><a href="">移动模块</a></dd>
+                <dd><a href="">后台模版</a></dd>
+                <dd><a href="">电商平台</a></dd>
+            </dl>
+        </li>
+        / hide e 0622 -->
+    </ul>
+    <ul class="layui-nav layui-right">
+        <li class="layui-nav-item">
+            <a href="__MODULE__/Manager/zself/mg_id/<?php echo session(admin_id); ?>">修改密码<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="__MODULE__/Manager/logout.html">退出系统</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href=""><?php echo session('admin_name'); ?></a>
+            <dl class="layui-nav-child">
+                <dd><a href="__MODULE__/Manager/zself/mg_id/<?php echo session(admin_id); ?>">修改信息</a></dd>
+                <dd><a href="__MODULE__/Manager/logout.html">退了</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+<script>
+//刷新页面 
+function reload(){
+    location.reload();
+}
+</script>

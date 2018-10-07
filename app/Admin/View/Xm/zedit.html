@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>修改项目</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-card">
+                        <div class="layui-card-header">修改项目</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form" action="">
+                                <input type="hidden" name="xm_id" value="{$info.xm_id}">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">项目名称</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_name" value="{$info.xm_name}" required lay-verify="required" placeholder="请输入服务器名称" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">项目主管</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_admin" value="{$info.xm_admin}" required lay-verify="required" placeholder="请输入项目主管" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备案地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_bei" value="{$info.xm_bei}" placeholder="请输入备案地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备案账号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_beiname" value="{$info.xm_beiname}" placeholder="请输入备案账号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备案密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_beipwd" value="{$info.xm_beipwd}" placeholder="请输入备案密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">绑定手机号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_tell" value="{$info.xm_tell}" placeholder="请输入绑定手机号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">手机联系人</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_tellname" value="{$info.xm_tellname}" placeholder="请输入手机联系人" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备注</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="xm_bz" value="{$info.xm_bz}" placeholder="备注" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zadd">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+    layui.use('laydate', function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#fwq_dq'
+        })
+    });
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(zadd)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 1000 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+                }
+            }, 'JSON');
+            return false;
+        })
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

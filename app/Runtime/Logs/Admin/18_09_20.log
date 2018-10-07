@@ -1,0 +1,944 @@
+[ 2018-09-20T08:44:50+08:00 ] 49.65.250.35 /admin.php/Manager/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:51+08:00 ] 49.65.250.35 /admin.php/Manager/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_name` = 'zq' AND `mg_pwd` = '123' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id` FROM `zq_xm`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\ManagerController.class.php 第 243 行.
+
+[ 2018-09-20T08:44:53+08:00 ] 49.65.250.35 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:53+08:00 ] 49.65.250.35 /admin.php/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_level=0 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_level=1 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:53+08:00 ] 49.65.250.35 /admin.php/Index/right.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0000s ]
+SQL: SELECT `xm_id` FROM `zq_xm`  [ RunTime:0.0000s ]
+SQL: SELECT `xm_name` FROM `zq_xm`  [ RunTime:0.0000s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm`  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_zhu` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '4' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 127 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 4 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_one_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 132 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 5 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 6 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 7 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 8 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 9 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 10 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '17' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 17 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '19' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 19 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '20' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 20 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '21' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 21 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '22' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 22 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 23 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '25' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 25 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '26' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 26 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '27' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 27 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\88c21970c93e218659401fc177043c94.php 第 46 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\88c21970c93e218659401fc177043c94.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:54+08:00 ] 49.65.250.35 /admin.php/Manager/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 25 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-09-20T08:44:55+08:00 ] 49.65.250.35 /admin.php/Manager/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:57+08:00 ] 49.65.250.35 /admin.php/Manager/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_name` = '张强' AND `mg_pwd` = 'zl4921272' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-09-20T08:44:59+08:00 ] 49.65.250.35 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:59+08:00 ] 49.65.250.35 /admin.php/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=0 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=1 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:44:59+08:00 ] 49.65.250.35 /admin.php/Index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zhu` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '4' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 197 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 4 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_one_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 202 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 5 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 6 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 7 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '22' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 22 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 46 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:45:02+08:00 ] 49.65.250.35 /admin.php/Ym/zkind/ym_xm/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` = '4' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` = '4' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 4 ORDER BY art_weight desc LIMIT 8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_site D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:45:02+08:00 ] 49.65.250.35 /admin.php/Article/zlists/ym_xm/4?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_article` WHERE `art_xmid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 4 ORDER BY art_addtime desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm`  [ RunTime:0.0000s ]
+SQL: SELECT `mg_id`,`mg_tname` FROM `zq_manager`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:45:04+08:00 ] 49.65.250.35 /admin.php/Ym/zkind/ym_xm/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` = '5' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` = '5' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 5 ORDER BY art_weight desc LIMIT 8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_site D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T08:45:04+08:00 ] 49.65.250.35 /admin.php/Article/zlists/ym_xm/5?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_article` WHERE `art_xmid` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 5 ORDER BY art_addtime desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm`  [ RunTime:0.0000s ]
+SQL: SELECT `mg_id`,`mg_tname` FROM `zq_manager`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:37:58+08:00 ] 49.65.250.35 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:37:58+08:00 ] 49.65.250.35 /admin.php/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=0 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=1 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:37:58+08:00 ] 49.65.250.35 /admin.php/Index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zhu` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '4' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 197 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 4 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_one_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 202 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 5 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 6 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 7 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '22' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 22 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 46 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:37:59+08:00 ] 49.65.250.35 /admin.php/Ym/zlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` = 0 ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_site D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 83 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 101 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 102 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 103 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 112 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:01+08:00 ] 49.65.250.35 /admin.php/Ym/zlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT `ym_id`,`ym_pid` FROM `zq_ym` WHERE (  ym_site='mm1.bbwznk.com'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `ym_id` FROM `zq_ym` WHERE ( ym_pid = '' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\YmController.class.php 第 58 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` = 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` = 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 101 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 102 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 103 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 112 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2018-09-20T09:38:03+08:00 ] 49.65.250.35 /admin.php/Ym/zlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT `ym_id`,`ym_pid` FROM `zq_ym` WHERE (  ym_site='mm1.bbwznk.com'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `ym_id` FROM `zq_ym` WHERE ( ym_pid = '' )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\YmController.class.php 第 58 行.
+NOTIC: [8] Undefined index: ym_showzhu D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\YmController.class.php 第 97 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` >= 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` >= 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 101 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 102 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 103 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 112 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:04+08:00 ] 49.65.250.35 /admin.php/Ym/zlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0000s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT `ym_id`,`ym_pid` FROM `zq_ym` WHERE (  ym_site='mm1.bbwznk.com'  ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `ym_id` FROM `zq_ym` WHERE ( ym_pid = '' )  [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\YmController.class.php 第 58 行.
+NOTIC: [8] Undefined index: ym_showzhu D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\YmController.class.php 第 97 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` >= 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` IN ('4','5','6','7','22') AND `ym_pid` >= 0 AND `ym_id` IN ('1','9','14','18','19','20','21','30','36','46','51','58','60','61','63','64','66','67','69','70','72','73','75','76','78','79','81','82','84','85','87','88','90','91','93','94','96','97','99','100','102','103','105','106','108','109','111','112','114','115','117','118','120','122','124','126','127','129','130','132','133','135','136','138','139','141','142','144','145','147','148','150','151','153','154','155','168','169','184','185','186','192','199','218','220','226','232','233','234','238','242','244','248','250','251','253','254','255','256','257','258','259','260','261','262','263','264','265','266','267','268','269','270','271','272','273','274','275','276','277','278','279','280','281','282','283','284','285','286','287','288','289','290','291','292','293','294','') ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_xm D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 91 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 101 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 102 行.
+NOTIC: [8] Undefined variable: ym_type D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 103 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 112 行.
+NOTIC: [8] Undefined variable: ym_pc D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\1519049405d0b51141bb78eb8e235e92.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:36+08:00 ] 49.65.250.35 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:37+08:00 ] 49.65.250.35 /admin.php/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=0 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_auth` WHERE ( auth_id in (103,118,119,105,125,128,129,130,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,182,183,184,185,187) and auth_level=1 and auth_show=1 ) ORDER BY auth_weight  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:37+08:00 ] 49.65.250.35 /admin.php/Index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zhu` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '4' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 197 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 4 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: quan_one_num D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Admin\Controller\IndexController.class.php 第 202 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '5' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 5 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 6 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 7 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE ( zhu_xm = '22' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_zhu` WHERE `zhu_xm` = 22 AND `zhu_dq` BETWEEN 1537372800 AND 1542729599 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 46 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\971cdb43735515843ca4df345c2f5a62.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:38+08:00 ] 49.65.250.35 /admin.php/Ym/zkind/ym_xm/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0000s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_ym` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zq_fwq` [ RunTime:0.0156s ]
+SQL: SELECT `fwq_id`,`fwq_name`,`fwq_mb` FROM `zq_fwq`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm` WHERE `xm_id` IN ('4','5','6','7','22')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_zh` [ RunTime:0.0156s ]
+SQL: SELECT `zh_id`,`zh_name` FROM `zq_zh`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_ym` WHERE `ym_xm` = '4' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_ym` WHERE `ym_xm` = '4' AND `ym_pc` = 2 AND `ym_type` = 1 AND `ym_pid` = 0 ORDER BY ym_quan LIMIT 0,100   [ RunTime:0.0000s ]
+SQL: SELECT `xm_name` FROM `zq_xm` WHERE `xm_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 4 ORDER BY art_weight desc LIMIT 8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 45 行.
+NOTIC: [8] Use of undefined constant admin_id - assumed 'admin_id' D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 53 行.
+NOTIC: [8] Undefined variable: ym_site D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Runtime\Cache\Admin\9764d18efd0fc3ba9208488b4065fdcf.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-09-20T09:38:38+08:00 ] 49.65.250.35 /admin.php/Article/zlists/ym_xm/4?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zq_manager` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_manager` WHERE `mg_id` = 65 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_auth` [ RunTime:0.0156s ]
+SQL: SELECT `auth_c`,`auth_a` FROM `zq_auth` WHERE ( auth_jichu=2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: s D:\home\ftp\y\ymrzxdnk120com\wwwroot\app\Tools\AdminController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `zq_role` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zq_role` WHERE `role_id` = 58 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_article` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zq_article` WHERE `art_xmid` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zq_article` WHERE `art_xmid` = 4 ORDER BY art_addtime desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zq_xm` [ RunTime:0.0156s ]
+SQL: SELECT `xm_id`,`xm_name` FROM `zq_xm`  [ RunTime:0.0000s ]
+SQL: SELECT `mg_id`,`mg_tname` FROM `zq_manager`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

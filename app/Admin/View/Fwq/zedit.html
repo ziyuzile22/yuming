@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+    <style>
+    .layui-input-block {
+        margin-left: 170px;
+    }
+
+    .layui-form-label {
+        width: 140px;
+    }
+    </style>
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-card">
+                        <div class="layui-card-header">修改服务器</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form" action="">
+                                <input type="hidden" name="fwq_id" value="{$info.fwq_id}">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器名称</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_name" value="{$info.fwq_name}" required lay-verify="required" placeholder="请输入服务器名称" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器远程地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_site" value="{$info.fwq_site}" required lay-verify="required" placeholder="请输入服务器远程地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器远程账号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_admin" value="{$info.fwq_admin}" required lay-verify="required" placeholder="请输入服务器远程账号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器远程密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_pwd" value="{$info.fwq_pwd}" required lay-verify="required" placeholder="请输入服务器远程密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器购买地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_gm" value="{$info.fwq_gm}" placeholder="服务器购买地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器购买地址账号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_gmadmin" value="{$info.fwq_gmadmin}" placeholder="服务器购买地址账号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器购买地址密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_gmpwd" value="{$info.fwq_gmpwd}" placeholder="服务器购买地址密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器到期时间</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_dq" value="{$info.fwq_dq|date='Y-m-d H:i:s', ###}" placeholder="服务器到期时间" autocomplete="off" id="fwq_dq" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">绑定手机号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_tell" value="{$info.fwq_tell}" placeholder="绑定手机号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">绑定手机号所有人</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_tellname" value="{$info.fwq_tellname}" placeholder="绑定手机号所有人" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">管理面板地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_mb" value="{$info.fwq_mb}" placeholder="管理面板地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">管理面板账号</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_mbadmin" value="{$info.fwq_mbadmin}" placeholder="管理面板账号" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">管理面板密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_mbpwd" value="{$info.fwq_mbpwd}" placeholder="管理面板密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备注</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="fwq_bz" placeholder="备注" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zedit">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+    layui.use('laydate', function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#fwq_dq',
+            type: 'datetime'
+        })
+    });
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(zedit)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 1000 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+                }
+            }, 'JSON');
+            return false;
+        })
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+    <style>
+        .layui-form-item .layui-input-inline{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>添加域名</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-card">
+                        <div class="layui-card-header">添加域名</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form layui-form-pane" action="">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">主域名</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_pid">
+                                            <option value="0" selected>自身为一级栏目</option>
+                                            
+                                            <volist name="yminfo" id="ym">
+                                                <option value="{$ym.ym_id}">{$ym.ym_site}</option>
+                                            </volist>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">域名地址</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="ym_site" id="ym_site" required lay-verify="required" placeholder="域名地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                    <div class="layui-form-mid layui-word-aux noticeredred" id="ym_site_notice">*域名地址不能为空!</div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">PC/SJ</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_pc" required lay-verify="required">
+                                            <option value="1" selected>PC</option>
+                                            <option value="2">SJ</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">竞价/优化</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_type" required lay-verify="required">
+                                            <option value="1" selected>竞价</option>
+                                            <option value="2">优化</option>
+                                            <option value="3">图片库</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">后台地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_hou" placeholder="后台地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">用户名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_admin" placeholder="用户名" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_pwd" placeholder="密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_fwq" required lay-verify="required">
+                                            <option value="">----请选择----</option>
+                                            <volist name="fwqinfo" id="fwq">
+                                                <option value="{$fwq.fwq_id}">{$fwq.fwq_site}</option>
+                                            </volist>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">项目</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_xm" required lay-verify="required">
+                                            <option value="">----请选择----</option>
+
+                                            <volist name="xminfo" id="xm">
+                                                <option value="{$xm.xm_id}">{$xm.xm_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">账户</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_zhanghu" required lay-verify="required">
+                                            <option value="">----请选择----</option>
+                                            <volist name="zhinfo" id="zh">
+                                                <option value="{$zh.zh_id}">{$zh.zh_name}</option>
+                                            </volist>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">ftp账户名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_ftp" placeholder="ftp账户名" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">ftp密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_ftppwd" placeholder="ftp密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备注</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_bz" placeholder="备注" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zadd">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+
+    //检查域名的主域名是否存在，不存在则提示添加
+    $('#ym_site').blur(function(){
+        var url = "__CONTROLLER__/checksite";
+        var data = { site: $(this).val() };
+
+        if(data.site == ""){
+            $('#ym_site_notice').html('域名不能为空!');
+            $('#ym_site_notice').addClass('noticeredred');
+            $('#ym_site_notice').removeClass('noticeredgreen');
+            return false;
+        }
+        
+        $.post(url, data, function(result){
+
+            if(result.status == 0){
+                $('#ym_site_notice').html(result.message);
+                $('#ym_site_notice').addClass('noticeredred');
+                $('#ym_site_notice').removeClass('noticeredgreen');
+
+                dialog.confirm(result.message, '__MODULE__/Zhu/zadd');
+            }
+
+            if(result.status == 1){
+                $('#ym_site_notice').text(result.message);
+                $('#ym_site_notice').addClass('noticeredgreen');
+                $('#ym_site_notice').removeClass('noticeredred');
+            }
+
+            if(result.status == 2){
+                $('#ym_site_notice').text(result.message);
+                $('#ym_site_notice').addClass('noticeredred');
+                $('#ym_site_notice').removeClass('noticeredgreen');
+
+                dialog.confirm(result.message, '__CONTROLLER__/zlist');
+            }
+
+        }, 'JSON');
+    });
+
+
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(zadd)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 1000 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+                }
+            }, 'JSON');
+            return false;
+        })
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

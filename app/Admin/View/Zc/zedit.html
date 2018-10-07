@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+    <style>
+    .layui-input-block {
+        margin-left: 170px;
+    }
+
+    .layui-form-label {
+        width: 140px;
+    }
+    </style>
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>修改域名注册账户</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-card">
+                        <div class="layui-card-header">修改域名注册账户</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form" action="">
+                                <input type="hidden" name="zc_id" value="{$info.zc_id}">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">注册地址昵称</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_name" value="{$info.zc_name}" required lay-verify="required" placeholder="注册地址昵称" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">域名注册地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_site" value="{$info.zc_site}" required lay-verify="required" placeholder="请输入域名注册地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">用户名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_admin" value="{$info.zc_admin}" placeholder="用户名" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_pwd" value="{$info.zc_pwd}" placeholder="密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">绑定手机号码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_tell" value="{$info.zc_tell}" placeholder="绑定手机号码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">号码联系人</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="zc_tellname" value="{$info.zc_tellname}" placeholder="号码联系人" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zedit">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(zedit)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 800 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+                }
+            }, 'JSON');
+            return false;
+        })
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

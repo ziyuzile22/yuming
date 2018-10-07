@@ -1,0 +1,1 @@
+open_basedir="H:\zq-project\web\yuming\;H:\upupw\memcached\;H:\upupw\phpmyadmin\;H:\upupw\temp\;C:\Windows\Temp\"

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+    
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>后台首页</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-body">
+                            <blockquote class="layui-elem-quote">
+                                <?php echo BIND_SYSNAME; ?> 提供核心功能模块,后续功能根据 630工作室 需求再次开发。
+                            </blockquote>
+                            <volist name="xm_list" id="xm">
+                                <a href="__MODULE__/Ym/zkind/ym_xm/{$xm.xm_id}" class="layui-btn layui-btn-lg zqbgc0{$i}">{$xm.xm_name}</a>
+                            </volist>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header">域名表格</div>
+                        <div class="layui-card-body">
+                            <div class="layuiadmin-card-text">
+                                <div id="main" style="width: 100%;height: 600px;">
+                                </div>
+								<script src="<?php echo Admin_JS_URL; ?>echarts.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+                                <script>
+                                    var app = echarts.init(document.getElementById('main'));
+
+                                    var posList = [
+                                        'left', 'right', 'top', 'bottom',
+                                        'inside',
+                                        'insideTop', 'insideLeft', 'insideRight', 'insideBottom',
+                                        'insideTopLeft', 'insideTopRight', 'insideBottomLeft', 'insideBottomRight'
+                                    ];
+
+                                    app.configParameters = {
+                                        rotate: {
+                                            min: -90,
+                                            max: 90
+                                        },
+                                        align: {
+                                            options: {
+                                                left: 'left',
+                                                center: 'center',
+                                                right: 'right'
+                                            }
+                                        },
+                                        verticalAlign: {
+                                            options: {
+                                                top: 'top',
+                                                middle: 'middle',
+                                                bottom: 'bottom'
+                                            }
+                                        },
+                                        position: {
+                                            options: echarts.util.reduce(posList, function (map, pos) {
+                                                map[pos] = pos;
+                                                return map;
+                                            }, {})
+                                        },
+                                        distance: {
+                                            min: 0,
+                                            max: 100
+                                        }
+                                    };
+
+                                    app.config = {
+                                        rotate: 90,
+                                        align: 'left',
+                                        verticalAlign: 'middle',
+                                        position: 'insideBottom',
+                                        distance: 15,
+                                        onChange: function () {
+                                            var labelOption = {
+                                                normal: {
+                                                    rotate: app.config.rotate,
+                                                    align: app.config.align,
+                                                    verticalAlign: app.config.verticalAlign,
+                                                    position: app.config.position,
+                                                    distance: app.config.distance
+                                                }
+                                            };
+                                            myChart.setOption({
+                                                series: [{
+                                                    label: labelOption
+                                                }, {
+                                                    label: labelOption
+                                                }]
+                                            });
+                                        }
+                                    };
+                                    var labelOption = {
+                                        normal: {
+                                            show: true,
+                                            position: app.config.position,
+                                            distance: app.config.distance,
+                                            align: app.config.align,
+                                            verticalAlign: app.config.verticalAlign,
+                                            rotate: app.config.rotate,
+                                            formatter: '{c}  {name|{a}}',
+                                            fontSize: 16,
+                                            rich: {
+                                                name: {
+                                                    textBorderColor: '#fff'
+                                                }
+                                            }
+                                        }
+                                    };
+                                    // 指定图表的配置项和数据
+                                    option = {
+                                        color: ['#4cabce', '#e5323e'],
+                                        tooltip: {
+                                            trigger: 'axis',
+                                            axisPointer: {
+                                                type: 'shadow'
+                                            }
+                                        },
+
+                                        calculable: true,
+                                        xAxis: [{
+                                            type: 'category',
+                                            axisTick: { show: false },
+                                            data: <?php echo json_encode($xm_ch); ?>
+                                    }],
+                                    yAxis: [{
+                                        type: 'value'
+                                    }],
+                                        series: [{
+                                            name: '全部',
+                                            type: 'bar',
+                                            barGap: 0,
+                                            label: labelOption,
+                                            data: <?php echo json_encode($quan_info); ?>
+                                        },
+                                        {
+                                            name: '2月内到期',
+                                            type: 'bar',
+                                            label: labelOption,
+                                            data: <?php echo json_encode($quan_one_info); ?>
+                                        }
+
+                                        ]
+                                };
+
+                                    // 使用刚指定的配置项和数据显示图表。
+                                    app.setOption(option);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+
+        layui.use('form', function () {
+            var form = layui.form;
+        });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

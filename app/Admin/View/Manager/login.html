@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录系统</title>
+    <include file="Public/meta" />
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <link rel="stylesheet" href="<?php echo Admin_CSS_URL; ?>xadmin.css?t=<?php echo time(); ?>">
+
+</head>
+<body class="login-bg">
+<div class="login">
+    <div class="message"><?php echo BIND_SYSNAME; ?></div>
+    <div id="darkbannerwrap"></div>
+    <form method="post" class="layui-form">
+        <input name="username" placeholder="用户名" type="text" lay-verify="required" class="layui-input">
+        <hr class="hr15">
+        <input name="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">
+        <hr class="hr15">
+        <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+        <hr class="hr20">
+    </form>
+</div>
+<script>
+    $(function () {
+        layui.use('form', function () {
+            var form = layui.form;
+            //监听提交
+            form.on('submit(login)', function (data) {
+                var url = "__CONTROLLER__/check";
+
+                //异步执行请求 $.post
+                $.post(url, data.field, function (result) {
+                    if (result.status == 0) {
+                        return dialog.error(result.message);
+                    }
+                    if (result.status == 1) {
+                        return dialog.success(result.message, '/admin.php');
+                    }
+                }, 'JSON');
+                return false;
+            });
+        });
+    })
+</script>
+<!-- 底部结束 -->
+</body>
+</html>

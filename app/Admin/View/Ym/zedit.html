@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>修改域名</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-card">
+                        <div class="layui-card-header">修改域名</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form layui-form-pane" action="">
+                                <input type="hidden" name="ym_id" value="{$info.ym_id}">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">主域名</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_pid">
+                                            <option value="0">自身为一级栏目</option>
+                                            
+                                            <volist name="yminfo" id="ym">
+                                                <option <eq name="ym.ym_id" value="$info['ym_pid']">selected</eq> value="{$ym.ym_id}">{$ym.ym_site}</option>
+                                            </volist>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">域名地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_site" value="{$info.ym_site}" required lay-verify="required" placeholder="域名地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">PC/SJ</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_pc" required lay-verify="required">
+                                            <option <eq name="info.ym_pc" value="1">selected</eq> value="1">PC</option>
+                                            <option <eq name="info.ym_pc" value="2">selected</eq> value="2">SJ</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">竞价/优化</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_type" required lay-verify="required">
+                                            <option <eq name="info.ym_type" value="1">selected</eq> value="1">竞价</option>
+                                            <option <eq name="info.ym_type" value="2">selected</eq> value="2">优化</option>
+                                            <option <eq name="info.ym_type" value="3">selected</eq> value="3">图片库</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">后台地址</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_hou" value="{$info.ym_hou}" placeholder="后台地址" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">用户名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_admin" value="{$info.ym_admin}" placeholder="用户名" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_pwd" value="{$info.ym_pwd}" placeholder="密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">服务器</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_fwq" required lay-verify="required">
+                                            <option>----请选择----</option>
+                                            <volist name="fwqinfo" id="fwq">
+                                                <option <eq name="fwq.fwq_id" value="$info['ym_fwq']">selected</eq> value="{$fwq.fwq_id}">{$fwq.fwq_site}</option>
+                                            </volist>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">项目</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_xm" required lay-verify="required">
+                                            <option value="">----请选择----</option>
+
+                                            <volist name="xminfo" id="xm">
+                                                <option <eq name="xm.xm_id" value="$info['ym_xm']">selected</eq> value="{$xm.xm_id}">{$xm.xm_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">账户</label>
+                                    <div class="layui-input-block">
+                                        <select name="ym_zhanghu" required lay-verify="required">
+                                            <option value="">----请选择----</option>
+                                            <volist name="zhinfo" id="zh">
+                                                <option <eq name="zh.zh_id" value="$info['ym_zhanghu']">selected</eq>  value="{$zh.zh_id}">{$zh.zh_name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">ftp账户名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_ftp" value="{$info.ym_ftp}" placeholder="ftp账户名" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">ftp密码</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_ftppwd" value="{$info.ym_ftppwd}" placeholder="ftp密码" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">备注</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="ym_bz" value="{$info.ym_bz}" placeholder="备注" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zadd">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+
+    layui.use('form', function() {
+        var form = layui.form;
+        form.on('submit(zadd)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 1000 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+                }
+            }, 'JSON');
+            return false;
+        })
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>首页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="<?php echo PUBLIC_PATH; ?>/layui/css/layui.css?t=<?php echo time(); ?>" media="all">
+    <base target="right">
+    <style>
+    .layui-logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1002;
+        width: 200px;
+        height: 60px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-weight: 300;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-size: 18px;
+        line-height: 60px;
+        color: rgba(255, 255, 255, .8);
+        text-align: center;
+        background: #506f4e;
+    }
+
+    .layui-nav {
+        margin-top: 60px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="layui-side layui-bg-black">
+        <div class="layui-logo" lay-href=""> <span>Staff System-v1.2</span> </div>
+        <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;"><i class="layui-icon layui-icon-star"></i> <cite>人才库</cite></a>
+                <dl class="layui-nav-child">
+                    <dd><a href="__MODULE__/Recruitment/zlist">人才信息</a></dd>
+                    <dd><a href="__MODULE__/Recruitment/zadd">添加人才</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon layui-icon-user"></i> <cite>员工管理</cite></a>
+                <dl class="layui-nav-child">
+                    <dd><a href="__MODULE__/Employee/zlist/working/1">在职员工</a></dd>
+                    <dd><a href="__MODULE__/Employee/zlist/working/2">离职员工</a></dd>
+                    <dd><a href="__MODULE__/Employee/zadd">添加员工</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon layui-icon-survey"></i> <cite>个人管理</cite></a>
+                <dl class="layui-nav-child">
+                    <dd><a href="__MODULE__/Manager/zselflist">账号信息</a></dd>
+                    <dd><a href="__MODULE__/Manager/zself/mg_id/<?php echo session(admin_id); ?>">修改密码</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon layui-icon-app"></i> <cite>部门管理</cite></a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:U('Department/zlist')}">所有部门</a></dd>
+                    <dd><a href="{:U('Department/zadd')}">添加部门</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon layui-icon-set"></i> <cite>权限管理</cite></a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:U('Manager/zlist')}">管理员列表</a></dd>
+                    <dd><a href="{:U('Auth/zlist')}">权限列表</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+    </script>
+</body>
+
+</html>

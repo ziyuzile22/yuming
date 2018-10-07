@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>分配权限</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header"><b style="font-size: 16px;">【 {$roleinfo.role_name} 】</b> - 分配权限</div>
+                        <div class="layui-card-body">
+
+<form class="layui-form" action="">
+    <div class="layui-row">
+        <div class="layui-col-md12">
+            <volist name="auth_infoA" id="vo">
+                <div class="layui-form-item">
+                    <div class="layui-form-label" style="padding: 0;text-align: left;">
+                        <input type="checkbox" name="auth_id[]" <if condition="in_array($vo[auth_id], $have_auth)">checked</if>  value="{$vo.auth_id}" autocomplete="off" class="layui-input" title="{$vo.auth_name}">
+                    </div>
+                    
+
+
+                    <div class="layui-input-block" style="margin-left: 130px;">
+                        <foreach name="auth_infoB" item="bo">
+                            <if condition="($bo['auth_pid'] eq $vo['auth_id']) and ($bo['auth_jichu'] eq 1)">
+                                <input type="checkbox" name="auth_id[]" <if condition="in_array($bo[auth_id], $have_auth)">checked</if> value="{$bo.auth_id}" autocomplete="off" class="layui-input" title="{$bo.auth_name}">
+                            </if>
+                        </foreach>
+                    </div>
+                </div>
+            </volist>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="zadd">分配权限</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </div>
+</form>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+
+
+    });
+
+    layui.use('form', function() {
+        var form = layui.form;
+
+    });
+
+
+    layui.use('form', function() {
+        var form = layui.form;
+
+        form.on('submit(zadd)', function(data) {
+            var data = data.field;
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 2000 }, function() {
+                        location.href = "__CONTROLLER__/zlist";
+                    });
+
+                }
+            }, 'JSON');
+            return false;
+        })
+
+    });
+    </script>
+</body>
+
+</html>

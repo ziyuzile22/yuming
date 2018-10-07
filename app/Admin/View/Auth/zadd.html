@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <include file="Public/meta" />
+</head>
+
+<body>
+    <include file="Public/header" />
+    <div class="layui-body zq-body">
+        <div class="layui-card layadmin-header">
+            <div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+                <a lay-href="">主页</a><span lay-separator="">/</span>
+                <a>
+                    <cite>添加权限</cite>
+                </a>
+            </div>
+        </div>
+        <div class="layui-fluid">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header">添加权限</div>
+                        <div class="layui-card-body">
+                            <form class="layui-form" action="">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">权限名称</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="auth_name" required lay-verify="required" placeholder="请输入权限名称" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">上级</label>
+                                    <div class="layui-input-inline">
+                                        <select name="auth_pid">
+                                            <option value="0" selected>自身为一级栏目</option>
+
+                                            <volist name="pidinfo" id="vo">
+                                                <option value="{$vo.auth_id}">{$vo.auth_name}</option>
+                                            </volist>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">控制器</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="auth_c" placeholder="请输入控制器名称" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">操作方法</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="auth_a" placeholder="请输入操作方法" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">导航图标</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="auth_tubiao" placeholder="请输入导航图标" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">导航显示</label>
+                                    <div class="layui-input-inline">
+                                        <select name="auth_show">
+                                            <option value="1" selected>显示</option>
+                                            <option value="2" >不显示</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">基础权限</label>
+                                    <div class="layui-input-inline">
+                                        <select name="auth_jichu">
+                                            <option value="1" selected>非基础权限</option>
+                                            <option value="2">基础权限</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">权重</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="auth_weight" placeholder="请输入权重" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="zadd">立即提交</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo PUBLIC_PATH; ?>/layui/layui.js?t=<?php echo time(); ?>" charset="utf-8"></script>
+    <script>
+    //JavaScript代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+    });
+
+    layui.use('form', function() {
+        var form = layui.form;
+
+        form.on('submit(zadd)', function(data) {
+            var data = data.field;
+
+
+            var url = "__SELF__";
+            $.post(url, data, function(result) {
+                if (result.status == 0) {
+                    layer.msg(result.message);
+                }
+
+                if (result.status == 1) {
+                    layer.msg(result.message, { icon: 1, time: 800 }, function() {
+                        window.location.href = "__CONTROLLER__/zlist";
+                    });
+
+                }
+            }, 'JSON');
+            return false;
+        })
+
+
+    });
+    </script>
+    <script src="<?php echo PUBLIC_PATH ?>dialog.js?t=<?php echo time(); ?>"></script>
+</body>
+
+</html>
